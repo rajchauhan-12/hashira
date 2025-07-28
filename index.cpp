@@ -41,7 +41,7 @@ vector<Share> parseJSON(const string& filename) {
                 current.word = value;
             } else if (key.find("y") != string::npos) {
                 current.y = stoi(value);
-                shares.push_back(current); // Once x, word, y are filled
+                shares.push_back(current); 
             }
         }
     }
